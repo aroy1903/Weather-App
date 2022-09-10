@@ -23,7 +23,7 @@ function App() {
         <input
           id="input"
           type="text"
-          placeholder="Enter a city or country"
+          placeholder="Enter a city, state or country"
           value={location}
           onChange={(event) => setLocation(event.target.value)}
         />
