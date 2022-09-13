@@ -9,7 +9,9 @@ function App() {
     axios.get(url).then((response) => {
       setData(response.data);
       setLocation('');
-    });
+    }).catch((err) => {
+        console.log('Error');
+      });
   };
   const kelvinConvertor = (input) => {
     let fahrenheit = ((input - 273.15) * 9) / 5 + 32;
